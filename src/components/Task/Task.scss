@@ -1,0 +1,50 @@
+.hidden {
+  visibility: hidden;
+}
+
+li:hover span {
+  visibility: visible;
+  align-items: center;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hidden-chkbx {
+  opacity: 0.3;
+}
+
+li:hover input {
+  opacity: 1;
+}
+
+input {
+  margin-right: 10px;
+  &:checked {
+    opacity: 1;
+  }
+}
+
+@media (hover: none) {
+  .hidden {
+    visibility: visible;
+  }
+}
+
+.task-completed {
+  text-decoration: line-through;
+  font-weight: lighter;
+  color: lightgrey;
+}
+
+span {
+  font-size: 39px;
+}
+
+.hidden-btn {
+  background-color: transparent;
+  border: 0;
+}

@@ -1,0 +1,25 @@
+footer > div {
+  border-radius: 0 0 5px 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 10px 8px 24px;
+  display: flex;
+  font-size: small;
+  justify-content: flex-end;
+  button {
+    border: 0;
+    background: transparent;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+  a {
+    color: grey;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.active {
+  color: #007bff;
+  font-weight: bold;
+}

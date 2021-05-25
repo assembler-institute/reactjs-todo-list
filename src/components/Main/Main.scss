@@ -1,0 +1,12 @@
+.mainBg {
+  background: linear-gradient(
+      to bottom,
+      rgba(228, 5, 248, 0.5),
+      rgba(255, 0, 0, 0)
+    ),
+    url("../../img/bg1.png") no-repeat fixed;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-basis: 100%;
+}
