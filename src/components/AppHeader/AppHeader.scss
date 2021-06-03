@@ -1,0 +1,17 @@
+.gridMode {
+  display: grid;
+  grid-template-columns: auto 40px;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+}
+
+.mainBackgroundHeader {
+  background-color: rgba(139, 214, 34, 0);
+}
+
+.big-title {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.8rem;
+}

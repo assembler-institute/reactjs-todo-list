@@ -1,0 +1,88 @@
+$backgroundColor: #ffffff;
+$appGray: #cacacf;
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  /*   align-items: center; */
+}
+
+.card-wide {
+  width: 100%;
+  border-bottom: 1px solid $appGray;
+  height: 50px;
+  padding: 10px;
+  background-color: $backgroundColor;
+  gap: 10px;
+  align-items: center;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-big {
+  font-size: 1.2rem;
+  transition: all 0.2s;
+}
+
+.font-light {
+  font-weight: 100;
+}
+
+.blue-checkbox {
+  margin-bottom: 0px;
+  input {
+    display: none;
+  }
+  .status-switch {
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    color: white;
+    background: linear-gradient(135deg, #6fbff9, #9d6ef5);
+    transition: all 0.5s;
+    .inherit-size {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+  input:not(:checked) ~ .status-switch {
+    border: 1px solid gray;
+    background: white;
+    transition: border 0.2s;
+    box-shadow: 2px 2px 0 13px white inset;
+  }
+  input:not(:checked) ~ .status-switch:hover {
+    background: linear-gradient(135deg, #6fbff9, #9d6ef5);
+    border: 2px solid transparent;
+    box-shadow: 2px 2px 0 13px white inset;
+    transition: background 0s;
+  }
+}
+
+.full-width {
+  width: 100%;
+}
+
+.input-no-border {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  :focus {
+    background-color: red;
+  }
+}
+
+.clickable {
+  cursor: pointer;
+}
+.no-border {
+  border: none;
+}
+
+.crossout {
+  text-decoration: line-through;
+  color: $appGray;
+}

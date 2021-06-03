@@ -1,0 +1,58 @@
+// .gridFooter {
+//   display: grid;
+//   grid-template-columns: 1fr auto 1.5fr;
+//   width: 100%;
+//   height: fit-content;
+//   padding: 1%;
+//   align-items: center; /*
+//   justify-content: center;
+//   justify-items: center; */
+//   margin: 0;
+//   p {
+//     margin: 0;
+//   }
+// }
+
+.text-center {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.navbar-link {
+  color: black;
+  transition: 0.2s;
+}
+.navbar-link:hover {
+  color: black;
+}
+
+.navbar-link-active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.flex-centered-gap {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.card-footer-justify {
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  * {
+    width: fit-content;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  button[disabled] {
+    cursor: not-allowed;
+  }
+  button[disabled]:hover {
+    transform: scale(1);
+  }
+}

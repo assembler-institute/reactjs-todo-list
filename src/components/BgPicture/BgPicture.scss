@@ -1,0 +1,17 @@
+.bgPicture {
+  background-color: white;
+  position: absolute;
+  transform: translateY(-10vh);
+  z-index: 50;
+  height: 40vh;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(274deg, #6fbff9, #822be2);
+}
+
+.bgImg {
+  width: 100%;
+  object-fit: cover;
+  mix-blend-mode: luminosity;
+  opacity: 0.5;
+}

@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
+* {
+  /* outline: solid red 1px; */
+  font-family: "Dosis", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin gridSquare {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.mainBackground {
+  background-color: rgb(235, 235, 235);
+}
+
+.whiteBg {
+  background-color: rgb(255, 255, 255);
+}
+
+.allWidth {
+  width: 100vw;
+}
+.minHeight {
+  min-height: 100vh;
+}
+
+.gridBody {
+  @include gridSquare();
+  padding-top: 5vh;
+  z-index: -100;
+  overflow-x: hidden;
+}
+
+.gridMain {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 80px;
+  justify-content: center;
+  width: 95%;
+  height: fit-content;
+  max-width: 600px;
+  margin: 0 auto;
+  z-index: 100;
+  padding: 1%;
+  overflow-x: hidden;
+  margin-bottom: 5vh;
+  section {
+    height: fit-content;
+  }
+}
+
+.roundedCorner {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.shadow {
+  box-shadow: 5px 10px #888888;
+}
+
+.flowScroll {
+  overflow-y: scroll;
+}
+
+.flowScroll::-webkit-scrollbar {
+  background-color: rgb(206, 206, 206);
+  width: 5px;
+}
+
+.flowScroll::-webkit-scrollbar-thumb {
+  background-color: rgb(78, 78, 78);
+  width: 5px;
+}
+
+.margBot {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: transparent;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+button:active {
+  transform: scale(0.9);
+}
+
+@media (max-width: 400px) {
+  html,
+  body {
+    font-style: 14px;
+  }
+}
+
+label {
+  margin: 0;
+}
+
+.font-white {
+  color: white;
+}
