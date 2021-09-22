@@ -1,0 +1,54 @@
+@use "../../styles/partials/colors";
+
+.create-todo-section {
+  margin: 2rem 0rem;
+  padding: 1.5rem 1rem;
+  width: 100%;
+}
+
+.error-message-wrapper {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: hsl(10, 68%, 91%);
+  color: darkred;
+}
+
+.checkbox-wrapper {
+  margin-right: 20px;
+}
+
+.custom-checkbox {
+  border: none;
+  border: 2px solid #7e76b7;
+  color: #7e76b7;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+
+  i {
+    width: fit-content;
+    height: fit-content;
+  }
+}
+
+form {
+  flex-grow: 1;
+  background-color: transparent;
+}
+
+.addtodo-input {
+  background-color: transparent;
+  flex-grow: 1;
+  border: none;
+  font-size: 15px;
+  transition: 0.4s;
+
+  &-dark {
+    color: white;
+  }
+}
+
+.addtodo-input:focus {
+  outline: none;
+}

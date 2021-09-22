@@ -1,0 +1,104 @@
+@use "../../styles/partials/colors" as c;
+
+.todo-item {
+  list-style-type: none;
+  width: 100%;
+  height: 75px;
+  border-bottom: 1px solid lightgray;
+
+  &__text {
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    width: 95%;
+    margin: 0;
+    outline: none;
+    border: none;
+    text-align: left;
+    padding: 0.5rem;
+
+    &:focus {
+      outline: 2px solid lightgray;
+    }
+
+    &--dark {
+      color: white;
+    }
+
+    &--done {
+      color: rgb(139, 148, 156);
+      text-decoration: line-through;
+    }
+  }
+}
+
+.checkbox-wrapper {
+  margin-right: 20px;
+  position: relative;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.custom-checkbox {
+  border: none;
+  border: 2px solid #7e76b7;
+  color: #7e76b7;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+
+  i {
+    width: fit-content;
+    height: fit-content;
+  }
+}
+
+input:checked ~ .custom-checkbox {
+  color: white;
+  border: none;
+
+  background-image: linear-gradient(125deg, #b62b86, #9f589e, #7e76b7, #3a8fd1);
+}
+
+form {
+  flex-grow: 1;
+}
+
+.edit-todo-input {
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 15px;
+  width: 95%;
+  margin: 0;
+  outline: none;
+  border: none;
+  text-align: left;
+  padding: 0.5rem;
+
+  &:focus {
+    outline: 2px solid lightgray;
+  }
+
+  &-dark {
+    color: white;
+  }
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.close {
+  font-size: 18px;
+
+  &-dark {
+    color: white;
+  }
+}
